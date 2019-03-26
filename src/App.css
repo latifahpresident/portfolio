@@ -90,30 +90,6 @@ span {
   /* display: block; */
 }
 
-/* @keyframes slideOutRight {
-  0% {
-   transform: translateX(20%);
-  }
-  50% {
-    transform: translateX(10%)
-  }
-  100% {
-    transform: translateX(0%)
-  } */
-
-  @keyframes slideOutRight {
-    from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
   @keyframes slideOutRight {
     from {
     -webkit-transform: translate3d(0, 0, 0);
