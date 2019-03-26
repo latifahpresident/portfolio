@@ -30,8 +30,6 @@ export const NavWrapper = styled.div`
     border: 1px solid #dce3e6;
     opacity: .8;
     position: absolute;
-    /* display: flex; */
-    /* justify-content: flex-end; */
     padding: 1rem;
     right: 0;
     width: 30%;

@@ -11,7 +11,7 @@ class Nav extends  Component {
     //     super(props);
     // }
     render () {
-   console.log(this.props.close)
+   console.log(this.props.isOpen)
         return (          
             <NavWrapper className={(this.props.isOpen ? 'nav-open' : 'nav-close')}>
                 <NavCloseButton onClick={this.props.close}>

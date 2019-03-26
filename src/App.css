@@ -85,13 +85,14 @@ span {
     opacity: 1;
   }
 }
+
 .close-button {
-  animation: fadeIn 1.3s ease-in forwards;
+  animation: fadeIn 1.8s ease-in forwards;
   /* display: block; */
 }
 
-  @keyframes slideOutRight {
-    from {
+@-webkit-keyframes slideOutRight {
+  from {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
@@ -103,27 +104,20 @@ span {
   }
 }
 
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-
-
 .nav-close {
-  animation: fadeIn .8s ease-in-out forwards;
+  animation: slideOutRight .8s ease-in forwards;
   /* display: none; */
 } 
-
 
 .nav-open {
   display: block;
 } 
+
+
+
+
+
+
 
 .active {
   border-bottom: 1.5px solid #eb9a0e;
