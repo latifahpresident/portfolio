@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.home {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url('./pages/Home/sharon-mccutcheon-535933-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+ 
+}
+ 
+ .project-left {
+  left: 0;
+}
+
+.project-description {
+  right: 0;
+}
+/* .project:hover  .project-description {
+   display: block;
+   background-color: #03916d;
+   Z-index: 1;  
+}   */
+.border {
+
+  width: 80%;
+  /* margin-left: 10rem; */
+  border: 3px solid red;
+
+}
+span {
+  color: #eb9a0e;
+  /* color: #ED9500; */
+}
+
+.checking {
+  color: #ED9500;
+  color: #dce3e6;
+  color: #073e5e;
+  color: #508A9B;
+  background-color: #03916d; 
+  color: #db9b2d;
+  color: #dce3e6;
+  color: #756d6d;
+  color: #58BEDA;
+  color: #3b7e91;
+}
+
+
+
+
+.open-button {
+  display: none;
+}
+
+.close-button {
+  display: block;
+}
+
+/* @keyframes slideOutRight {
+  0% {
+   transform: translateX(20%);
+  }
+  50% {
+    transform: translateX(10%)
+  }
+  100% {
+    transform: translateX(0%)
+  } */
+
+.nav-close {
+  /* animation: slideOutRight 1s ease-in-out forwards; */
+  display: none;
+}
+
+.nav-open {
+  display: block;
+} 
+
+.active {
+  border-bottom: 1.5px solid #eb9a0e;
+}
