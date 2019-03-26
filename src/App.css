@@ -105,8 +105,8 @@ span {
 }
 
 .nav-close {
-  animation: slideOutRight .8s ease-in forwards;
-  /* display: none; */
+  /* animation: slideOutRight .8s ease-in forwards; */
+  display: none;
 } 
 
 .nav-open {
