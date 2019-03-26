@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
+import ScrollAnimation from 'react-animate-on-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes,  } from '@fortawesome/free-solid-svg-icons';
 
@@ -12,7 +13,8 @@ class Nav extends  Component {
     // }
     render () {
    console.log(this.props.isOpen)
-        return (          
+        return (     
+            // <ScrollAnimation animateOut="slideOutRight">
             <NavWrapper className={(this.props.isOpen ? 'nav-open' : 'nav-close')}>
                 <NavCloseButton onClick={this.props.close}>
                     <FontAwesomeIcon  icon={faTimes} size="3x" />
@@ -76,6 +78,7 @@ class Nav extends  Component {
                 </NavLinks> 
                       
             </NavWrapper>
+             /* </ScrollAnimation> */
         )}
 };
 

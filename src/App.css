@@ -91,6 +91,12 @@ span {
   /* display: block; */
 }
 
+
+.nav-open {
+  display: block;
+} 
+
+
 @-webkit-keyframes slideOutRight {
   from {
     -webkit-transform: translate3d(0, 0, 0);
@@ -105,20 +111,14 @@ span {
 }
 
 .nav-close {
-  animation: slideOutRight .8s ease-in forwards;
+  animation: slideOutRight 1s ease-in forwards;
   /* display: none; */
 } 
 
-.nav-open {
-  display: block;
-} 
 
 
 
 
-
-
-
-.active {
+/* .active {
   border-bottom: 1.5px solid #eb9a0e;
-}
+} */
