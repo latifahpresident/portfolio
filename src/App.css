@@ -103,10 +103,23 @@ span {
   }
 }
 
-.nav-close {
-  animation: slideOutRight .8s ease-in-out forwards;
-  /* display: none; */
+@keyframes anime {
+  from {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
+
+to {
+  visibility: hidden;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}}
+
+.nav-close {
+  animation: anime .8s ease-in-out forwards;
+  /* display: none; */
+} 
+
 
 .nav-open {
   display: block;
