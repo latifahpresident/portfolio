@@ -51,21 +51,9 @@
 .project-description {
   right: 0;
 }
-/* .project:hover  .project-description {
-   display: block;
-   background-color: #03916d;
-   Z-index: 1;  
-}   */
-.border {
 
-  width: 80%;
-  /* margin-left: 10rem; */
-  border: 3px solid red;
-
-}
 span {
   color: #eb9a0e;
-  /* color: #ED9500; */
 }
 
 .checking {
@@ -88,8 +76,18 @@ span {
   display: none;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 .close-button {
-  display: block;
+  animation: fadeIn 1.3s ease-in forwards;
+  /* display: block; */
 }
 
 /* @keyframes slideOutRight {
@@ -103,9 +101,35 @@ span {
     transform: translateX(0%)
   } */
 
+  @keyframes slideOutRight {
+    from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+  @keyframes slideOutRight {
+    from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
 .nav-close {
-  /* animation: slideOutRight 1s ease-in-out forwards; */
-  display: none;
+  animation: slideOutRight .8s ease-in-out forwards;
+  /* display: none; */
 }
 
 .nav-open {
