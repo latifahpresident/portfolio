@@ -1,14 +1,14 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import { ExperienceWrapper, ExperienceTitle, ExperienceContent, SubTitle } from './experience-styled';
-import {Paragraph } from '../About/about-styles';
+import { ExperienceWrapper, ExperienceContent, SubTitle } from './experience-styled';
+import { Paragraph, Title } from '../../components/component-styles';
 
 const Experience = () => {
     return (
         <ExperienceWrapper>
             <ScrollAnimation animateIn="slideInLeft">
-                <ExperienceTitle>Experience</ExperienceTitle>
+                <Title experience>Experience</Title>
             </ScrollAnimation>
             
             

@@ -1,7 +1,10 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import { AboutWrapper, AboutTitle, AboutBody, AboutIcons, AboutIcon, Paragraph } from './about-styles';
+import { AboutWrapper, AboutTitle, AboutBody, AboutIcons, AboutIcon, } from './about-styles';
+import { Title } from '../../components/component-styles';
+
+import { Paragraph } from '../../components/component-styles';
 import creative from './creativity (1).svg'
 import inquisitive from './people.svg';
 import accessability from './key.svg';
@@ -15,7 +18,7 @@ class About extends React.Component {
     return (
         <AboutWrapper>
            <ScrollAnimation animateIn="slideInLeft">
-                <AboutTitle className='header'>ABOUT</AboutTitle>
+                <Title className='header'>ABOUT</Title>
            </ScrollAnimation>
                     <AboutIcons>
                             <div className='image'>

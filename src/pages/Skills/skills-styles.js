@@ -38,8 +38,7 @@ export const IconsWrapper = styled.div`
     grid-column-gap: 100px;
     grid-row-gap: 100px;
     justify-items: center;
-    /* border: 2px solid hotpink; */
-    width: 70%;
+    width: 50%;
 
     svg {
         width: 100%;
@@ -47,10 +46,17 @@ export const IconsWrapper = styled.div`
             transition: transform .2s;
             transform: scale(1.2);
         }
+        @media only screen and (max-width: 700px) {
+            width: 80%;
+        }
     }
 
     @media only screen and (max-width: 700px) {
-        grid-column-gap: 60px;
-    grid-row-gap: 60px;
+        grid-column-gap: 35px;
+        grid-row-gap: 55px;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(4, 80px);
+        padding: 0 2rem;
+        /* border: 1px solid green; */
     }
 `;

@@ -1,33 +1,33 @@
 import styled, { keyframes } from 'styled-components';
 
-// const slideInRight = keyframes`
-//     {
-//     -webkit-transform: translate3d(100%, 0, 0);
-//     transform: translate3d(100%, 0, 0);
-//     visibility: visible;
-//   }
+const slideInRight = keyframes`
+    {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
 
-//   to {
-//     -webkit-transform: translate3d(0, 0, 0);
-//     transform: translate3d(0, 0, 0);
-//   }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-//   from {
-//     -webkit-transform: translate3d(100%, 0, 0);
-//     transform: translate3d(100%, 0, 0);
-//     visibility: visible;
-//   }
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
 
-//   to {
-//     -webkit-transform: translate3d(0, 0, 0);
-//     transform: translate3d(0, 0, 0);
-//   }
-// `; 
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+`; 
 
 export const NavWrapper = styled.div`
     
     background-color:  #1a3038;
-    border: 1px solid #dce3e6;
+    /* border: 1px solid #dce3e6; */
     opacity: .8;
     position: absolute;
     padding: 1rem;
@@ -35,9 +35,14 @@ export const NavWrapper = styled.div`
     width: 30%;
     height: 96.5%;
     z-index: 1;
-    
+    animation: slideInRight 1s ease-in-out forwards;
     /* border: 1px solid red; */
-     
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
+    @media only screen and (max-width: 700px) {
+      display: none;
+    }
 `;
 
 export const NavCloseButton = styled.div`

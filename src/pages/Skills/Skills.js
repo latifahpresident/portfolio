@@ -2,13 +2,13 @@ import React from 'react';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import { SkillsWrapper, SkillsTitle, SkillsIcons, IconsWrapper, } from './skills-styles';
-
+import { SkillsWrapper,  SkillsIcons, IconsWrapper, } from './skills-styles';
+import { Title } from '../../components/component-styles';
 const Skills = () => {
     return (
         <SkillsWrapper>
             <ScrollAnimation animateIn="slideInRight">
-                <SkillsTitle>Skills</SkillsTitle>
+                <Title>Skills</Title>
             </ScrollAnimation>
             <SkillsIcons>
             <ScrollAnimation animateIn="rollIn">

@@ -32,7 +32,6 @@ export const ProjectsContainer = styled.div`
     @media only screen and (max-width: 900px) {
         width: 90%;
         flex-direction: ${props => props.reverse ? 'column' : 'column-reverse'};
-        /* flex-direction: column-reverse; */
     }
 `;
 
@@ -84,13 +83,14 @@ export const ProjectDescriptionText = styled.p`
     font-size: ${props => props.header ? '2rem' : '1.2rem'};
     line-height: 30px;
     margin: .7rem 0 0 0;
-    text-align: left;
+    text-align: ${props => props.header ? 'center' : 'left'};
     /* border: 1px solid red; */
     @media only screen and (max-width: 700px) {
         margin: 0 auto;
-        text-align: center;
-        width: 70%;
-        margin-bottom: ${props => props.header ? '1rem' : '0rem'}
+        /* text-align: center; */
+        /* width: 70%; */
+        margin-bottom: ${props => props.header ? '1rem' : '0rem'};
+
     }
 `;
 export const ProjectButton = styled.a`

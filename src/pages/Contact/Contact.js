@@ -3,8 +3,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import {faTwitter, faLinkedin, faGithub} from '@fortawesome/fontawesome-free-brands';
-import { ContactWrapper, ContactTitle, ContactIcons } from './contact-styles';
-import { Paragraph } from '../About/about-styles';
+import { ContactWrapper, ContactIcons } from './contact-styles';
+import { Title } from '../../components/component-styles';
+import { Paragraph } from '../../components/component-styles';
 import '../../App.css';
 
 
@@ -12,7 +13,7 @@ const Contact = () => {
     return (
         <ContactWrapper>
             <ScrollAnimation animateIn="slideInLeft">
-                <ContactTitle>Contact</ContactTitle>
+                <Title>Contact</Title>
             </ScrollAnimation>
             <Paragraph header contact>
                 Interested in working with me? Get in touch! 
