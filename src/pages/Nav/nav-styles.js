@@ -40,6 +40,9 @@ export const NavWrapper = styled.div`
     @media only screen and (max-width: 900px) {
       display: none;
     }
+    @media only screen and (max-width: 700px) {
+      display: none;
+    }
 `;
 
 export const NavCloseButton = styled.div`
