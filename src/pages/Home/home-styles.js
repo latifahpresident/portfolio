@@ -18,6 +18,9 @@ export const OpenNav = styled.div`
     right: 0;
     top: 3%;
     height: 45px;
+    @media only screen and (max-width: 700px) {
+        display: none;
+    }
 `;
 
 export const HomeContent = styled.header`

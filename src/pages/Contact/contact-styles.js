@@ -28,4 +28,7 @@ export const ContactIcons = styled.div`
     .font-awesome {
         color:  #dce3e6;
     }
+    @media only screen and (max-width: 700px) {
+        width: 100%;
+    }
 `;

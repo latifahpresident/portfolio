@@ -2,8 +2,7 @@ import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import {
-        ProjectsWrapper, 
-        ProjectsTitle, 
+        ProjectsWrapper,  
         ProjectsContainer, 
         ProjectContent,
         Project, 
@@ -14,6 +13,7 @@ import {
         
     } 
 from './projects-styling';
+import { Title } from '../../components/component-styles';
 import '../../App.css';
 import lambdaNotesProject from './lambda-notes.png';
 import oerBookr from './OERBookr.png';
@@ -22,9 +22,9 @@ const Projects = () => {
     return (
         <ProjectsWrapper>
             <ScrollAnimation animateIn="slideInRight">
-                <ProjectsTitle>
+                <Title>
                     Projects
-                </ProjectsTitle>
+                </Title>
             </ScrollAnimation>
 
             <ProjectsContainer>
