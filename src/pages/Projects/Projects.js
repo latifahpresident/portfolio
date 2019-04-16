@@ -59,7 +59,7 @@ const Projects = () => {
                             OER Bookr is an open educational resource textbook website for teachers. 
                              My role on the project was back-end developer. I set up all MVC’s
                             using Node, SQLite, and Express along with the authentication which was
-                            implemented using JWT tokens.
+                            implemented using JSON Web Token.
                         </ProjectDescriptionText> 
 
                         <ScrollAnimation animateIn='bounceInDown'>
